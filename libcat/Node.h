@@ -25,7 +25,13 @@ typedef struct {
     float scale[3];
 } Transform;
 
+struct Matrix4x4
+{
+    float data[4*4];
+};
+
 class Node;
+typedef std::weak_ptr<Node> WPNode; //avoid cycle reference
 
 class NodePart
 {
@@ -36,8 +42,7 @@ public:
 private:
     MeshPart::SP _meshPart;
     Material::SP _material;
-    // fbxAMatrix Bones ....
-    std::vector<std::pair<Node::SP, FbxAMatrix> > _bones;
+    std::vector<std::pair<WPNode, Matrix4x4> > _bones;
     std::vector<std::vector<Texture::SP>> _uvMapping;
     NodePart(){};
 };
