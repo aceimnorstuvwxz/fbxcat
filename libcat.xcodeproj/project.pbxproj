@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B52CC7EE1B05109200C3AFB0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52CC7ED1B05109200C3AFB0 /* main.cpp */; };
+		B5344D3D1B051D9100786911 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D3B1B051D9100786911 /* Model.cpp */; };
+		B5344D421B05253C00786911 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D401B05253C00786911 /* Mesh.cpp */; };
+		B5344D451B05254A00786911 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D431B05254A00786911 /* Material.cpp */; };
+		B5344D481B05255600786911 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D461B05255600786911 /* Node.cpp */; };
+		B5344D4B1B05256500786911 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D491B05256500786911 /* Animation.cpp */; };
+		B5344D4E1B05349C00786911 /* Keyframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D4C1B05349C00786911 /* Keyframe.cpp */; };
+		B5344D511B05380B00786911 /* Attribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D4F1B05380B00786911 /* Attribute.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +32,34 @@
 /* Begin PBXFileReference section */
 		B52CC7EA1B05109200C3AFB0 /* libcat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libcat; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52CC7ED1B05109200C3AFB0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B5344D2E1B051B4500786911 /* liblibcat2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibcat2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5344D3B1B051D9100786911 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		B5344D3C1B051D9100786911 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		B5344D3E1B051DC900786911 /* cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cat.h; sourceTree = "<group>"; };
+		B5344D3F1B051E1700786911 /* def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		B5344D401B05253C00786911 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		B5344D411B05253C00786911 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		B5344D431B05254A00786911 /* Material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Material.cpp; sourceTree = "<group>"; };
+		B5344D441B05254A00786911 /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		B5344D461B05255600786911 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		B5344D471B05255600786911 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		B5344D491B05256500786911 /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
+		B5344D4A1B05256500786911 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		B5344D4C1B05349C00786911 /* Keyframe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Keyframe.cpp; sourceTree = "<group>"; };
+		B5344D4D1B05349C00786911 /* Keyframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyframe.h; sourceTree = "<group>"; };
+		B5344D4F1B05380B00786911 /* Attribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Attribute.cpp; sourceTree = "<group>"; };
+		B5344D501B05380B00786911 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B52CC7E71B05109200C3AFB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5344D2B1B051B4500786911 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				B52CC7EA1B05109200C3AFB0 /* libcat */,
+				B5344D2E1B051B4500786911 /* liblibcat2.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,12 +89,54 @@
 		B52CC7EC1B05109200C3AFB0 /* libcat */ = {
 			isa = PBXGroup;
 			children = (
+				B5344D3F1B051E1700786911 /* def.h */,
+				B5344D3E1B051DC900786911 /* cat.h */,
+				B5344D391B051B6E00786911 /* include */,
+				B5344D3A1B051B7800786911 /* src */,
 				B52CC7ED1B05109200C3AFB0 /* main.cpp */,
+				B5344D3B1B051D9100786911 /* Model.cpp */,
+				B5344D3C1B051D9100786911 /* Model.h */,
+				B5344D401B05253C00786911 /* Mesh.cpp */,
+				B5344D411B05253C00786911 /* Mesh.h */,
+				B5344D431B05254A00786911 /* Material.cpp */,
+				B5344D441B05254A00786911 /* Material.h */,
+				B5344D461B05255600786911 /* Node.cpp */,
+				B5344D471B05255600786911 /* Node.h */,
+				B5344D491B05256500786911 /* Animation.cpp */,
+				B5344D4A1B05256500786911 /* Animation.h */,
+				B5344D4C1B05349C00786911 /* Keyframe.cpp */,
+				B5344D4D1B05349C00786911 /* Keyframe.h */,
+				B5344D4F1B05380B00786911 /* Attribute.cpp */,
+				B5344D501B05380B00786911 /* Attribute.h */,
 			);
 			path = libcat;
 			sourceTree = "<group>";
 		};
+		B5344D391B051B6E00786911 /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		B5344D3A1B051B7800786911 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5344D2C1B051B4500786911 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B52CC7E91B05109200C3AFB0 /* libcat */ = {
@@ -82,6 +156,23 @@
 			productReference = B52CC7EA1B05109200C3AFB0 /* libcat */;
 			productType = "com.apple.product-type.tool";
 		};
+		B5344D2D1B051B4500786911 /* libcat2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5344D381B051B4500786911 /* Build configuration list for PBXNativeTarget "libcat2" */;
+			buildPhases = (
+				B5344D2A1B051B4500786911 /* Sources */,
+				B5344D2B1B051B4500786911 /* Frameworks */,
+				B5344D2C1B051B4500786911 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcat2;
+			productName = libcat2;
+			productReference = B5344D2E1B051B4500786911 /* liblibcat2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +183,9 @@
 				ORGANIZATIONNAME = chenbingfeng;
 				TargetAttributes = {
 					B52CC7E91B05109200C3AFB0 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B5344D2D1B051B4500786911 = {
 						CreatedOnToolsVersion = 6.3;
 					};
 				};
@@ -109,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				B52CC7E91B05109200C3AFB0 /* libcat */,
+				B5344D2D1B051B4500786911 /* libcat2 */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +213,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5344D451B05254A00786911 /* Material.cpp in Sources */,
+				B5344D421B05253C00786911 /* Mesh.cpp in Sources */,
+				B5344D511B05380B00786911 /* Attribute.cpp in Sources */,
+				B5344D4B1B05256500786911 /* Animation.cpp in Sources */,
 				B52CC7EE1B05109200C3AFB0 /* main.cpp in Sources */,
+				B5344D4E1B05349C00786911 /* Keyframe.cpp in Sources */,
+				B5344D3D1B051D9100786911 /* Model.cpp in Sources */,
+				B5344D481B05255600786911 /* Node.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5344D2A1B051B4500786911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +325,32 @@
 			};
 			name = Release;
 		};
+		B5344D361B051B4500786911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5344D371B051B4500786911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -233,6 +368,15 @@
 			buildConfigurations = (
 				B52CC7F21B05109200C3AFB0 /* Debug */,
 				B52CC7F31B05109200C3AFB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5344D381B051B4500786911 /* Build configuration list for PBXNativeTarget "libcat2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5344D361B051B4500786911 /* Debug */,
+				B5344D371B051B4500786911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
