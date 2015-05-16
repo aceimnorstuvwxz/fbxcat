@@ -47,7 +47,7 @@ bool Loader::load(const std::string& filename, Model::SP model)
 
     rapidjson::Document doc;
     doc.Parse(json_raw.c_str());
-    model->fromJSON(doc);
+//    model->fromJSON(doc);
 
 //    std::cout << json_raw << std::endl;
     std::cout << "json_raw size=" << json_raw.size() << std::endl;
