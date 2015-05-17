@@ -81,8 +81,11 @@ public:
 
     void test() const;
     std::string& getId();
+    void fromJSON(rapidjson::Value& value) override;
 
 private:
+    Usage typeString2usage(const char* typestr);
+
     // fbxFileTexture source
     std::string _id;
     std::string _path;
@@ -101,6 +104,7 @@ public:
     Texture::SP getTexture(const char* idt);
     int getTextureIndex(Texture::SP texture) const;
 
+    void fromJSON(rapidjson::Value& value) override;
 private:
     //fbxSurfaceMaterial source
     std::string _id;

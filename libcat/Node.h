@@ -40,6 +40,8 @@ public:
     typedef std::shared_ptr<NodePart> SP;
     static SP create();
 
+    void fromJSON(rapidjson::Value& value) override;
+
 private:
     MeshPart::SP _meshPart;
     Material::SP _material;
@@ -57,6 +59,8 @@ public:
     bool hasPartsRecurisive() const;
     size_t getTotalNodeCount() const;
     size_t getTotalNodePartCount() const;
+
+    void fromJSON(rapidjson::Value& value) override;
 
 private:
     Transform _transform;

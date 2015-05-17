@@ -15,10 +15,43 @@ NodePart::SP NodePart::create()
     return SP(new NodePart());
 }
 
+void NodePart::fromJSON(rapidjson::Value& value)
+{
+    /*
+    writer << json::obj;
+    writer << "meshpartid" = meshPart->id;
+    writer << "materialid" = material->id;
+    if (!bones.empty()) {
+        writer.val("bones").is().arr();
+        for (std::vector<std::pair<Node *, FbxAMatrix> >::const_iterator it = bones.begin(); it != bones.end(); ++it) {
+            writer << json::obj;
+            writer << "node" = it->first->id;
+            writeAsFloat(writer, "translation", it->second.GetT().mData);
+            writeAsFloat(writer, "rotation", it->second.GetQ().mData);
+            writeAsFloat(writer, "scale", it->second.GetS().mData);
+            writer << json::end;
+        }
+        writer.end();
+    }
+    if (!uvMapping.empty()) {
+        writer.val("uvMapping").is().arr(uvMapping.size(), 16);
+        for (std::vector<std::vector<Material::Texture *> >::const_iterator it = uvMapping.begin(); it != uvMapping.end(); ++it) {
+            writer.arr((*it).size(), 16);
+            for (std::vector<Material::Texture *>::const_iterator tt = (*it).begin(); tt != (*it).end(); ++tt)
+                writer << material->getTextureIndex(*tt);
+            writer.end();
+        }
+        writer.end();
+    }
+    writer << json::end;
+     */
+}
+
 Node::SP Node::create(const char* idt)
 {
     return SP(new Node(idt));
 }
+
 
 Node::Node(const char* idt)
 {
@@ -72,6 +105,77 @@ size_t Node::getTotalNodePartCount() const
         result += node->getTotalNodePartCount();
     }
     return result;
+}
+
+void Node::fromJSON(rapidjson::Value& value)
+{
+    using namespace rapidjson;
+    /*
+     writer << json::obj;
+     writer << "id" = id;
+     if (transform.rotation[0] != 0. || transform.rotation[1] != 0. || transform.rotation[2] != 0. || transform.rotation[3] != 1.)
+     writer << "rotation" = transform.rotation;
+     if (transform.scale[0] != 1. || transform.scale[1] != 1. || transform.scale[2] != 1.)
+     writer << "scale" = transform.scale;
+     if (transform.translation[0] != 0. || transform.translation[1] != 0. || transform.translation[2] != 0.)
+     writer << "translation" = transform.translation;
+     if (!parts.empty())
+     writer << "parts" = parts;
+     if (!children.empty())
+     writer << "children" = children;
+     writer << json::end;
+     */
+
+    // id
+    _id = value["id"].GetString();
+
+    // rotation
+    if (value.HasMember("rotation")) {
+        auto& jrotation = value["rotation"];
+        _transform.rotation[0] = jrotation[0].GetDouble();
+        _transform.rotation[1] = jrotation[1].GetDouble();
+        _transform.rotation[2] = jrotation[2].GetDouble();
+        _transform.rotation[3] = jrotation[3].GetDouble();
+    }
+
+    // scale
+    if (value.HasMember("scale")) {
+        auto& jscale = value["scale"];
+        _transform.scale[0] = jscale[0].GetDouble();
+        _transform.scale[1] = jscale[1].GetDouble();
+        _transform.scale[2] = jscale[2].GetDouble();
+    }
+
+    // translation
+    if (value.HasMember("translation")) {
+        auto& jtrans = value["translation"];
+        _transform.translation[0] = jtrans[0].GetDouble();
+        _transform.translation[1] = jtrans[1].GetDouble();
+        _transform.translation[2] = jtrans[2].GetDouble();
+    }
+
+    // parts
+    if (value.HasMember("parts")) {
+        auto& jparts = value["parts"];
+        for (SizeType i = 0; i < jparts.Size(); i++) {
+            auto one_part = NodePart::create();
+            one_part->fromJSON(jparts[i]);
+            _parts.push_back(one_part);
+        }
+    }
+
+    // children
+    if (value.HasMember("children")) {
+        auto& jchildren = value["children"];
+        for (SizeType i = 0; i < jchildren.Size(); i++) {
+            auto one_node = Node::create();
+            one_node->fromJSON(jchildren[i]);
+            _children.push_back(one_node);
+        }
+    }
+
+    // end
+
 }
 
 NS_CAT_END
