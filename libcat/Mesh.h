@@ -32,7 +32,7 @@ public:
     std::vector<unsigned short>& getIndices() const;
     unsigned int getPrimitiveType() const;
 
-    
+    void fromJSON(rapidjson::Value& value) override;
 private:
     // FbxCluster sourceBones
     MeshPart();
@@ -83,6 +83,8 @@ public:
                 return false;
         return true;
     }
+
+    void fromJSON(rapidjson::Value& value) override;
 private:
     Attributes _attributes;
     unsigned int _vertexSize;

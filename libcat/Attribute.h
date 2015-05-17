@@ -159,6 +159,8 @@ public:
         value |= (1 << attribute);
     }
 
+    void add(const char* attributeName);
+
     void remove(const unsigned int &attribute) {
         value &= -1 ^ (1 << attribute);
     }
@@ -230,6 +232,8 @@ public:
     void hasBlendWeight(const unsigned short &index, const bool &v) {
         set(ATTRIBUTE_BLENDWEIGHT0 + index, v);
     }
+
+    void fromJSON(rapidjson::Value& value) override;
 };
 NS_CAT_END
 
