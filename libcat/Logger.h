@@ -10,6 +10,7 @@
 #define libcat_Logger_h
 
 #include "def.h"
+#include <iostream>
 
 #define LOG(...) Log(__FILE__, __FUNCTION__, __LINE__, __VA_ARGS__)
 

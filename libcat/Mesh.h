@@ -31,6 +31,8 @@ public:
     std::string& getId() const;
     std::vector<unsigned short>& getIndices() const;
     unsigned int getPrimitiveType() const;
+
+    
 private:
     // FbxCluster sourceBones
     MeshPart();
