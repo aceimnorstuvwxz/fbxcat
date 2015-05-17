@@ -17,6 +17,7 @@
 		B5344D4B1B05256500786911 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D491B05256500786911 /* Animation.cpp */; };
 		B5344D4E1B05349C00786911 /* Keyframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D4C1B05349C00786911 /* Keyframe.cpp */; };
 		B5344D511B05380B00786911 /* Attribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5344D4F1B05380B00786911 /* Attribute.cpp */; };
+		B5EF4CAF1B07824200247AB2 /* inter_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5EF4CAD1B07824200247AB2 /* inter_common.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,9 @@
 		B5344D4D1B05349C00786911 /* Keyframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyframe.h; sourceTree = "<group>"; };
 		B5344D4F1B05380B00786911 /* Attribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Attribute.cpp; sourceTree = "<group>"; };
 		B5344D501B05380B00786911 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		B5EF4CAD1B07824200247AB2 /* inter_common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inter_common.cpp; sourceTree = "<group>"; };
+		B5EF4CAE1B07824200247AB2 /* inter_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inter_common.h; sourceTree = "<group>"; };
+		B5EF4CB01B07839E00247AB2 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,9 @@
 				B50D97621B071ADB0075A199 /* Loader.h */,
 				B50D97641B0739510075A199 /* Basewave.cpp */,
 				B50D97651B0739510075A199 /* Basewave.h */,
+				B5EF4CAD1B07824200247AB2 /* inter_common.cpp */,
+				B5EF4CAE1B07824200247AB2 /* inter_common.h */,
+				B5EF4CB01B07839E00247AB2 /* Logger.h */,
 			);
 			path = libcat;
 			sourceTree = "<group>";
@@ -229,6 +236,7 @@
 				B5344D511B05380B00786911 /* Attribute.cpp in Sources */,
 				B5344D4B1B05256500786911 /* Animation.cpp in Sources */,
 				B52CC7EE1B05109200C3AFB0 /* main.cpp in Sources */,
+				B5EF4CAF1B07824200247AB2 /* inter_common.cpp in Sources */,
 				B5344D4E1B05349C00786911 /* Keyframe.cpp in Sources */,
 				B50D97661B0739510075A199 /* Basewave.cpp in Sources */,
 				B5344D3D1B051D9100786911 /* Model.cpp in Sources */,

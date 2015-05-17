@@ -14,11 +14,12 @@
 #include <string>
 
 #include "def.h"
+#include "Basewave.h"
 #include "Attribute.h"
 
 NS_CAT_BEGIN
 
-class MeshPart
+class MeshPart: public Basewave
 {
 public:
     typedef std::shared_ptr<MeshPart> SP;
@@ -39,7 +40,7 @@ private:
     unsigned int _primitiveType;
 };
 
-class Mesh
+class Mesh: public Basewave
 {
 public:
     typedef std::shared_ptr<Mesh> SP;

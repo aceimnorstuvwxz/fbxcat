@@ -8,12 +8,15 @@
 
 #include <iostream>
 #include <memory>
+#include "Loader.h"
 
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-
+    auto model = cat::Model::create();
+    cat::Loader loader;
+    loader.load("cubeman.g3dj", model);
 
     return 0;
 }

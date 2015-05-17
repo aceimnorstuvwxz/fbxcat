@@ -11,11 +11,12 @@
 
 #include <memory>
 #include "def.h"
+#include "Basewave.h"
 #include "Node.h"
 
 NS_CAT_BEGIN
 
-class Keyframe
+class Keyframe:public Basewave
 {
 public:
     typedef std::shared_ptr<Keyframe> SP;

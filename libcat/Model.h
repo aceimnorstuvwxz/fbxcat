@@ -15,6 +15,7 @@
 
 #include "def.h"
 #include "Mesh.h"
+#include "Basewave.h"
 #include "Material.h"
 #include "Node.h"
 #include "Animation.h"
@@ -26,19 +27,21 @@ class Material;
 class Mesh;
 class Node;
 
-class Model
+class Model: public Basewave
 {
 public:
     typedef std::shared_ptr<Model> SP;
     static SP create();
-    Node::SP getNode(const char* idt) const;
-    Material::SP getMaterial(const char* idt) const;
-    size_t getTotalNodeCount() const;
-    size_t getTotalNodePartCount() const;
-    size_t getMeshpartCount() const;
-    size_t getTotalVertexCount() const;
-    size_t getTotalIndexCount() const;
-    size_t getTotalTextureCount() const;
+//    Node::SP getNode(const char* idt) const;
+//    Material::SP getMaterial(const char* idt) const;
+//    size_t getTotalNodeCount() const;
+//    size_t getTotalNodePartCount() const;
+//    size_t getMeshpartCount() const;
+//    size_t getTotalVertexCount() const;
+//    size_t getTotalIndexCount() const;
+//    size_t getTotalTextureCount() const;
+
+    void fromJSON(rapidjson::Document& doc) override;
 
 private:
     Model(){};

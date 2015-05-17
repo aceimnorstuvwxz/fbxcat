@@ -14,13 +14,14 @@
 #include <string>
 
 #include "def.h"
+#include "Basewave.h"
 #include "Node.h"
 #include "Keyframe.h"
 
 NS_CAT_BEGIN
 
 
-class NodeAnimation
+class NodeAnimation: public Basewave
 {
 public:
     typedef std::shared_ptr<NodeAnimation> SP;
@@ -34,7 +35,7 @@ private:
     NodeAnimation();
 };
 
-class Animation
+class Animation: public Basewave
 {
 public:
     typedef std::shared_ptr<Animation> SP;

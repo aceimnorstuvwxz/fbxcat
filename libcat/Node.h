@@ -14,6 +14,7 @@
 #include <string>
 
 #include "def.h"
+#include "Basewave.h"
 #include "Material.h"
 #include "Mesh.h"
 
@@ -33,7 +34,7 @@ struct Matrix4x4
 class Node;
 typedef std::weak_ptr<Node> WPNode; //avoid cycle reference
 
-class NodePart
+class NodePart: public Basewave
 {
 public:
     typedef std::shared_ptr<NodePart> SP;
@@ -47,7 +48,7 @@ private:
     NodePart(){};
 };
 
-class Node
+class Node: public Basewave
 {
 public:
     typedef std::shared_ptr<Node> SP;

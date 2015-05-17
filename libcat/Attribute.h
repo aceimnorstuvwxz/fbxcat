@@ -11,6 +11,7 @@
 
 #include <vector>
 #include "def.h"
+#include "Basewave.h"
 
 NS_CAT_BEGIN
 
@@ -88,7 +89,9 @@ static const std::vector<unsigned short> AttributeTypes[] = {
 
 #define ATTRIBUTE_SIZE(idx) (AttributeTypes[idx].size())
 
-struct Attributes {
+class Attributes: public Basewave
+{
+public:
     unsigned long value;
 
     Attributes() : value(0) {}

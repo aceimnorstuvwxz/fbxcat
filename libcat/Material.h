@@ -14,6 +14,7 @@
 #include <string>
 
 #include "def.h"
+#include "Basewave.h"
 
 NS_CAT_BEGIN
 template<typename T, size_t n=1>
@@ -58,7 +59,7 @@ struct OptionalValue<T, 1> {
     }
 };
 
-class Texture
+class Texture: public Basewave
 {
 public:
     enum Usage {
@@ -92,7 +93,7 @@ private:
     Texture();
 };
 
-class Material
+class Material: public Basewave
 {
 public:
     typedef std::shared_ptr<Material> SP;
