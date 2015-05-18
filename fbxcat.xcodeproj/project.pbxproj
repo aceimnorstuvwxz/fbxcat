@@ -33,6 +33,27 @@
 		B5331CE51B0A53AF00DCFD37 /* Attribute.h in Headers */ = {isa = PBXBuildFile; fileRef = B5331CDF1B0A53AF00DCFD37 /* Attribute.h */; };
 		B5331CE61B0A53AF00DCFD37 /* Basewave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331CE01B0A53AF00DCFD37 /* Basewave.cpp */; };
 		B5331CE71B0A53AF00DCFD37 /* Basewave.h in Headers */ = {isa = PBXBuildFile; fileRef = B5331CE11B0A53AF00DCFD37 /* Basewave.h */; };
+		B5331E1F1B0A575F00DCFD37 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331CEB1B0A575E00DCFD37 /* Context.cpp */; };
+		B5331E201B0A575F00DCFD37 /* cppgl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331CED1B0A575E00DCFD37 /* cppgl.cpp */; };
+		B5331E211B0A575F00DCFD37 /* Framebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331CEF1B0A575E00DCFD37 /* Framebuffer.cpp */; };
+		B5331E271B0A575F00DCFD37 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331DFE1B0A575F00DCFD37 /* Image.cpp */; };
+		B5331E281B0A575F00DCFD37 /* inter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E001B0A575F00DCFD37 /* inter.cpp */; };
+		B5331E291B0A575F00DCFD37 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E021B0A575F00DCFD37 /* Mesh.cpp */; };
+		B5331E2A1B0A575F00DCFD37 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E041B0A575F00DCFD37 /* Program.cpp */; };
+		B5331E2B1B0A575F00DCFD37 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E061B0A575F00DCFD37 /* Shader.cpp */; };
+		B5331E2C1B0A575F00DCFD37 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = B5331E091B0A575F00DCFD37 /* image_DXT.c */; };
+		B5331E2D1B0A575F00DCFD37 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = B5331E0B1B0A575F00DCFD37 /* image_helper.c */; };
+		B5331E301B0A575F00DCFD37 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = B5331E101B0A575F00DCFD37 /* SOIL.c */; };
+		B5331E311B0A575F00DCFD37 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = B5331E121B0A575F00DCFD37 /* stb_image_aug.c */; };
+		B5331E331B0A575F00DCFD37 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E171B0A575F00DCFD37 /* Texture.cpp */; };
+		B5331E341B0A575F00DCFD37 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E191B0A575F00DCFD37 /* utils.cpp */; };
+		B5331E351B0A575F00DCFD37 /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E1B1B0A575F00DCFD37 /* VertexArray.cpp */; };
+		B5331E361B0A575F00DCFD37 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5331E1D1B0A575F00DCFD37 /* VertexBuffer.cpp */; };
+		B5331E381B0A57C600DCFD37 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5331E371B0A57C600DCFD37 /* Cocoa.framework */; };
+		B5331E3A1B0A57CF00DCFD37 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5331E391B0A57CF00DCFD37 /* CoreVideo.framework */; };
+		B5331E3C1B0A57D500DCFD37 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5331E3B1B0A57D500DCFD37 /* IOKit.framework */; };
+		B5331E3E1B0A57DA00DCFD37 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5331E3D1B0A57DA00DCFD37 /* OpenGL.framework */; };
+		B5331E411B0A592A00DCFD37 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5331E401B0A592A00DCFD37 /* libglfw3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +107,46 @@
 		B5331CDF1B0A53AF00DCFD37 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
 		B5331CE01B0A53AF00DCFD37 /* Basewave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Basewave.cpp; sourceTree = "<group>"; };
 		B5331CE11B0A53AF00DCFD37 /* Basewave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basewave.h; sourceTree = "<group>"; };
+		B5331CEB1B0A575E00DCFD37 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
+		B5331CEC1B0A575E00DCFD37 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		B5331CED1B0A575E00DCFD37 /* cppgl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cppgl.cpp; sourceTree = "<group>"; };
+		B5331CEE1B0A575E00DCFD37 /* cppgl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cppgl.h; sourceTree = "<group>"; };
+		B5331CEF1B0A575E00DCFD37 /* Framebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Framebuffer.cpp; sourceTree = "<group>"; };
+		B5331CF01B0A575E00DCFD37 /* Framebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Framebuffer.h; sourceTree = "<group>"; };
+		B5331DFE1B0A575F00DCFD37 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		B5331DFF1B0A575F00DCFD37 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		B5331E001B0A575F00DCFD37 /* inter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inter.cpp; sourceTree = "<group>"; };
+		B5331E011B0A575F00DCFD37 /* inter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inter.h; sourceTree = "<group>"; };
+		B5331E021B0A575F00DCFD37 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		B5331E031B0A575F00DCFD37 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		B5331E041B0A575F00DCFD37 /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = "<group>"; };
+		B5331E051B0A575F00DCFD37 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		B5331E061B0A575F00DCFD37 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		B5331E071B0A575F00DCFD37 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		B5331E091B0A575F00DCFD37 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		B5331E0A1B0A575F00DCFD37 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		B5331E0B1B0A575F00DCFD37 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		B5331E0C1B0A575F00DCFD37 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		B5331E101B0A575F00DCFD37 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		B5331E111B0A575F00DCFD37 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		B5331E121B0A575F00DCFD37 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		B5331E131B0A575F00DCFD37 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		B5331E141B0A575F00DCFD37 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		B5331E151B0A575F00DCFD37 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		B5331E171B0A575F00DCFD37 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		B5331E181B0A575F00DCFD37 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		B5331E191B0A575F00DCFD37 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		B5331E1A1B0A575F00DCFD37 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		B5331E1B1B0A575F00DCFD37 /* VertexArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
+		B5331E1C1B0A575F00DCFD37 /* VertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexArray.h; sourceTree = "<group>"; };
+		B5331E1D1B0A575F00DCFD37 /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		B5331E1E1B0A575F00DCFD37 /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBuffer.h; sourceTree = "<group>"; };
+		B5331E371B0A57C600DCFD37 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B5331E391B0A57CF00DCFD37 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B5331E3B1B0A57D500DCFD37 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B5331E3D1B0A57DA00DCFD37 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B5331E3F1B0A588C00DCFD37 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
+		B5331E401B0A592A00DCFD37 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +161,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5331E411B0A592A00DCFD37 /* libglfw3.a in Frameworks */,
+				B5331E3E1B0A57DA00DCFD37 /* OpenGL.framework in Frameworks */,
+				B5331E3C1B0A57D500DCFD37 /* IOKit.framework in Frameworks */,
+				B5331E3A1B0A57CF00DCFD37 /* CoreVideo.framework in Frameworks */,
+				B5331E381B0A57C600DCFD37 /* Cocoa.framework in Frameworks */,
 				B5331CDB1B0A530600DCFD37 /* libfbxcat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +176,11 @@
 		B5331C921B0A51B100DCFD37 = {
 			isa = PBXGroup;
 			children = (
+				B5331E401B0A592A00DCFD37 /* libglfw3.a */,
+				B5331E3D1B0A57DA00DCFD37 /* OpenGL.framework */,
+				B5331E3B1B0A57D500DCFD37 /* IOKit.framework */,
+				B5331E391B0A57CF00DCFD37 /* CoreVideo.framework */,
+				B5331E371B0A57C600DCFD37 /* Cocoa.framework */,
 				B5331C9D1B0A51B100DCFD37 /* fbxcat */,
 				B5331CD31B0A528F00DCFD37 /* samples */,
 				B5331C9C1B0A51B100DCFD37 /* Products */,
@@ -160,9 +231,60 @@
 		B5331CD31B0A528F00DCFD37 /* samples */ = {
 			isa = PBXGroup;
 			children = (
+				B5331CEA1B0A575E00DCFD37 /* cppgl */,
 				B5331CD41B0A528F00DCFD37 /* main.cpp */,
 			);
 			path = samples;
+			sourceTree = "<group>";
+		};
+		B5331CEA1B0A575E00DCFD37 /* cppgl */ = {
+			isa = PBXGroup;
+			children = (
+				B5331E3F1B0A588C00DCFD37 /* glm */,
+				B5331CEB1B0A575E00DCFD37 /* Context.cpp */,
+				B5331CEC1B0A575E00DCFD37 /* Context.h */,
+				B5331CED1B0A575E00DCFD37 /* cppgl.cpp */,
+				B5331CEE1B0A575E00DCFD37 /* cppgl.h */,
+				B5331CEF1B0A575E00DCFD37 /* Framebuffer.cpp */,
+				B5331CF01B0A575E00DCFD37 /* Framebuffer.h */,
+				B5331DFE1B0A575F00DCFD37 /* Image.cpp */,
+				B5331DFF1B0A575F00DCFD37 /* Image.h */,
+				B5331E001B0A575F00DCFD37 /* inter.cpp */,
+				B5331E011B0A575F00DCFD37 /* inter.h */,
+				B5331E021B0A575F00DCFD37 /* Mesh.cpp */,
+				B5331E031B0A575F00DCFD37 /* Mesh.h */,
+				B5331E041B0A575F00DCFD37 /* Program.cpp */,
+				B5331E051B0A575F00DCFD37 /* Program.h */,
+				B5331E061B0A575F00DCFD37 /* Shader.cpp */,
+				B5331E071B0A575F00DCFD37 /* Shader.h */,
+				B5331E081B0A575F00DCFD37 /* SOIL */,
+				B5331E171B0A575F00DCFD37 /* Texture.cpp */,
+				B5331E181B0A575F00DCFD37 /* Texture.h */,
+				B5331E191B0A575F00DCFD37 /* utils.cpp */,
+				B5331E1A1B0A575F00DCFD37 /* utils.h */,
+				B5331E1B1B0A575F00DCFD37 /* VertexArray.cpp */,
+				B5331E1C1B0A575F00DCFD37 /* VertexArray.h */,
+				B5331E1D1B0A575F00DCFD37 /* VertexBuffer.cpp */,
+				B5331E1E1B0A575F00DCFD37 /* VertexBuffer.h */,
+			);
+			path = cppgl;
+			sourceTree = "<group>";
+		};
+		B5331E081B0A575F00DCFD37 /* SOIL */ = {
+			isa = PBXGroup;
+			children = (
+				B5331E091B0A575F00DCFD37 /* image_DXT.c */,
+				B5331E0A1B0A575F00DCFD37 /* image_DXT.h */,
+				B5331E0B1B0A575F00DCFD37 /* image_helper.c */,
+				B5331E0C1B0A575F00DCFD37 /* image_helper.h */,
+				B5331E101B0A575F00DCFD37 /* SOIL.c */,
+				B5331E111B0A575F00DCFD37 /* SOIL.h */,
+				B5331E121B0A575F00DCFD37 /* stb_image_aug.c */,
+				B5331E131B0A575F00DCFD37 /* stb_image_aug.h */,
+				B5331E141B0A575F00DCFD37 /* stbi_DDS_aug.h */,
+				B5331E151B0A575F00DCFD37 /* stbi_DDS_aug_c.h */,
+			);
+			path = SOIL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +406,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5331E2D1B0A575F00DCFD37 /* image_helper.c in Sources */,
+				B5331E341B0A575F00DCFD37 /* utils.cpp in Sources */,
+				B5331E281B0A575F00DCFD37 /* inter.cpp in Sources */,
+				B5331E2B1B0A575F00DCFD37 /* Shader.cpp in Sources */,
+				B5331E201B0A575F00DCFD37 /* cppgl.cpp in Sources */,
+				B5331E291B0A575F00DCFD37 /* Mesh.cpp in Sources */,
+				B5331E211B0A575F00DCFD37 /* Framebuffer.cpp in Sources */,
+				B5331E311B0A575F00DCFD37 /* stb_image_aug.c in Sources */,
+				B5331E351B0A575F00DCFD37 /* VertexArray.cpp in Sources */,
 				B5331CD51B0A528F00DCFD37 /* main.cpp in Sources */,
+				B5331E301B0A575F00DCFD37 /* SOIL.c in Sources */,
+				B5331E361B0A575F00DCFD37 /* VertexBuffer.cpp in Sources */,
+				B5331E2A1B0A575F00DCFD37 /* Program.cpp in Sources */,
+				B5331E1F1B0A575F00DCFD37 /* Context.cpp in Sources */,
+				B5331E271B0A575F00DCFD37 /* Image.cpp in Sources */,
+				B5331E2C1B0A575F00DCFD37 /* image_DXT.c in Sources */,
+				B5331E331B0A575F00DCFD37 /* Texture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +543,12 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -412,6 +556,12 @@
 		B5331CD81B0A528F00DCFD37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -444,6 +594,7 @@
 				B5331CD81B0A528F00DCFD37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
