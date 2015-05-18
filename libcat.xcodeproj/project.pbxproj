@@ -101,8 +101,6 @@
 			children = (
 				B5344D3F1B051E1700786911 /* def.h */,
 				B5344D3E1B051DC900786911 /* cat.h */,
-				B5344D391B051B6E00786911 /* include */,
-				B5344D3A1B051B7800786911 /* src */,
 				B52CC7ED1B05109200C3AFB0 /* main.cpp */,
 				B5344D3B1B051D9100786911 /* Model.cpp */,
 				B5344D3C1B051D9100786911 /* Model.h */,
@@ -127,20 +125,6 @@
 				B5EF4CB01B07839E00247AB2 /* Logger.h */,
 			);
 			path = libcat;
-			sourceTree = "<group>";
-		};
-		B5344D391B051B6E00786911 /* include */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = include;
-			sourceTree = "<group>";
-		};
-		B5344D3A1B051B7800786911 /* src */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

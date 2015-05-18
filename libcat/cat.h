@@ -11,5 +11,13 @@
 
 #include "def.h"
 #include "Model.h"
+#include "Mesh.h"
+#include "Material.h"
+#include "Node.h"
+#include "Animation.h"
+#include "Keyframe.h"
+#include "Attribute.h"
+#include "Loader.h"
+#include "Basewave.h"
 
 #endif
