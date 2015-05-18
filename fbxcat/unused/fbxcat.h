@@ -1,19 +1,19 @@
 /*
- *  libcat2.h
- *  libcat2
+ *  fbxcat.h
+ *  fbxcat
  *
- *  Created by chenbingfeng on 15/5/15.
+ *  Created by chenbingfeng on 15/5/19.
  *  Copyright (c) 2015年 chenbingfeng. All rights reserved.
  *
  */
 
-#ifndef libcat2_
-#define libcat2_
+#ifndef fbxcat_
+#define fbxcat_
 
 /* The classes below are exported */
 #pragma GCC visibility push(default)
 
-class libcat2
+class fbxcat
 {
 	public:
 		void HelloWorld(const char *);

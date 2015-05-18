@@ -1,15 +1,13 @@
 //
 //  main.cpp
-//  libcat
+//  samples
 //
-//  Created by chenbingfeng on 15/5/15.
+//  Created by chenbingfeng on 15/5/19.
 //  Copyright (c) 2015年 chenbingfeng. All rights reserved.
 //
 
 #include <iostream>
-#include <memory>
-#include "Loader.h"
-
+#include "../fbxcat/cat.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
