@@ -26,9 +26,11 @@ class NodeAnimation: public Basewave
 public:
     typedef std::shared_ptr<NodeAnimation> SP;
     static SP create();
-    
+
+    void fromJSON(rapidjson::Value& value) override;
 private:
-    Node::SP _node;
+    std::string _nodeId;
+    Node::SP _node; //TODO
     std::vector<Keyframe::SP> _keyframes;
     bool _translate, _rotate, _scale;
 
@@ -40,6 +42,8 @@ class Animation: public Basewave
 public:
     typedef std::shared_ptr<Animation> SP;
     static SP create();
+
+    void fromJSON(rapidjson::Value& value) override;
 
 private:
     std::string _id;

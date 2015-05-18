@@ -11,6 +11,7 @@
 
 NS_CAT_BEGIN
 
+/*
 static const char* getPrimitiveTypeString(const int &primitiveTypeId) {
     switch(primitiveTypeId){
         case 0:
@@ -26,7 +27,7 @@ static const char* getPrimitiveTypeString(const int &primitiveTypeId) {
         default:
             return "UNKNOWN";
     }
-}
+}*/
 
 static int primitiveTypeString2int(const char* type)
 {

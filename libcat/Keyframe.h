@@ -20,6 +20,7 @@ class Keyframe:public Basewave
 {
 public:
     typedef std::shared_ptr<Keyframe> SP;
+    static SP create();
 
     float time;
     float translation[3];
@@ -28,8 +29,8 @@ public:
     bool hasTranslation;
     bool hasRotation;
     bool hasScale;
-
-    static SP create();
+    
+    void fromJSON(rapidjson::Value& value) override;
 private:
     Keyframe();
 };

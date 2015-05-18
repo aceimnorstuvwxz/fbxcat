@@ -86,8 +86,8 @@ void NodePart::fromJSON(rapidjson::Value& value)
         for (SizeType i = 0; i < jarrout.Size(); i++) {
             auto& jarrin = jarrout[i];
             vec.reserve(jarrin.Size());
-            for (SizeType i = 0; i < jarrin.Size(); i++) {
-                vec.push_back(jarrin[i].GetInt());
+            for (SizeType j = 0; j < jarrin.Size(); j++) {
+                vec.push_back(jarrin[j].GetInt());
             }
         }
         _uvMapping.push_back(vec);
