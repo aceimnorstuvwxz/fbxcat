@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     auto model = cat::Model::create();
     cat::Loader loader;
-    loader.load("cubeman.g3dj", model);
+    loader.load("animation_case.g3dj", model);
 
     return 0;
 }

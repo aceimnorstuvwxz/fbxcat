@@ -7,6 +7,7 @@
 //
 
 #include "Node.h"
+#include "Logger.h"
 
 NS_CAT_BEGIN
 
@@ -17,6 +18,7 @@ NodePart::SP NodePart::create()
 
 void NodePart::fromJSON(rapidjson::Value& value)
 {
+    using namespace rapidjson;
     /*
     writer << json::obj;
     writer << "meshpartid" = meshPart->id;
@@ -45,6 +47,53 @@ void NodePart::fromJSON(rapidjson::Value& value)
     }
     writer << json::end;
      */
+    // meshpartid
+    _meshPartId = value["meshpartid"].GetString();
+    // TODO
+
+    // materialid
+    _materialId = value["materialid"].GetString();
+
+    // bones
+    if (value.HasMember("bones")) {
+        auto& jbones = value["bones"];
+        LOG("bones=", jbones.Size());
+        _bones.reserve(jbones.Size());
+        for (SizeType i = 0; i < jbones.Size(); i++) {
+            auto& jbone = jbones[i];
+            Matrix4x4 mat44;
+            mat44.translation[0] = jbone["translation"][0].GetDouble();
+            mat44.translation[1] = jbone["translation"][1].GetDouble();
+            mat44.translation[2] = jbone["translation"][2].GetDouble();
+            mat44.translation[3] = jbone["translation"][3].GetDouble();
+            mat44.rotation[0] = jbone["rotation"][0].GetDouble();
+            mat44.rotation[1] = jbone["rotation"][1].GetDouble();
+            mat44.rotation[2] = jbone["rotation"][2].GetDouble();
+            mat44.rotation[3] = jbone["rotation"][3].GetDouble();
+            mat44.scale[0] = jbone["scale"][0].GetDouble();
+            mat44.scale[1] = jbone["scale"][1].GetDouble();
+            mat44.scale[2] = jbone["scale"][2].GetDouble();
+            mat44.scale[3] = jbone["scale"][3].GetDouble();
+            _bones.push_back({jbone["node"].GetString(), mat44});
+        }
+    }
+
+    //uvMapping
+    if (value.HasMember("uvMapping")) {
+        auto& jarrout = value["uvMapping"];
+        _uvMapping.reserve(jarrout.Size());
+        std::vector<int> vec;
+        for (SizeType i = 0; i < jarrout.Size(); i++) {
+            auto& jarrin = jarrout[i];
+            vec.reserve(jarrin.Size());
+            for (SizeType i = 0; i < jarrin.Size(); i++) {
+                vec.push_back(jarrin[i].GetInt());
+            }
+        }
+        _uvMapping.push_back(vec);
+    }
+
+    // end
 }
 
 Node::SP Node::create(const char* idt)

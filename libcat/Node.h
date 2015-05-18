@@ -28,7 +28,10 @@ typedef struct {
 
 struct Matrix4x4
 {
-    float data[4*4];
+    float translation[4];
+    float rotation[4];
+    float scale[4];
+    float unknow[4];
 };
 
 class Node;
@@ -43,10 +46,12 @@ public:
     void fromJSON(rapidjson::Value& value) override;
 
 private:
+    std::string _meshPartId;
+    std::string _materialId;
     MeshPart::SP _meshPart;
     Material::SP _material;
-    std::vector<std::pair<WPNode, Matrix4x4> > _bones;
-    std::vector<std::vector<Texture::SP>> _uvMapping;
+    std::vector<std::pair<std::string, Matrix4x4> > _bones;// TODO WPNode
+    std::vector<std::vector<int>> _uvMapping; //Texture::SP
     NodePart(){};
 };
 
